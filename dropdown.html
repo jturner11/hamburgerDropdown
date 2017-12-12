@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dropdown</title>
+</head>
+<body>
+<nav>
+    <div class="mainNav clearfix">
+        <p class="navicon">&#9776;</p>
+    </div>
+    <ul class="mainNavDropDown clearfix">
+        <li>Home</li>
+        <li>About</li>
+        <li>Work</li>
+        <li>Blog</li>
+        <li>Contact</li>
+    </ul>
+</nav>
+<h1>CLICK THE HAMBURGER</h1>
+</body>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+</script>
+<script>$('.navicon').on('click', function () {
+    $('.mainNavDropDown').slideToggle(500);
+});</script>
+</html>
